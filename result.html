@@ -1,0 +1,73 @@
+<html>
+<head>
+
+<style>
+</style>
+
+</head>
+
+<body>
+
+<?php
+$solute=$_REQUEST['solute'];
+echo "Hello, ";
+echo $solute;
+echo "<br>";
+?>
+
+<table class="rwd-table">
+<?php
+// Database
+$servername = "localhost";
+$username = "root";
+$password = "aoteman";
+$dbname = "mu23";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+//$result = $conn->query("SELECT * FROM Proline WHERE Solutes='$solute' OR Model_Compound='$solute' UNION ALL SELECT * FROM PEG where Solutes='$solute' OR Model_Compound='$solute' UNION ALL SELECT * FROM Urea WHERE Solutes='$solute' OR Model_Compound='$solute';");
+
+$result = $conn->query("SELECT * FROM Proline WHERE Solutes='$solute' OR Model_Compound='$solute';");
+//$result = $conn->query("SELECT * FROM PEG WHERE Solutes='$solute' UNION ALL SELECT * FROM Urea WHERE Solutes='$solute' UNION ALL SELECT * FROM Proline WHERE Solutes='$solute';");
+
+echo "<tr><th>Solutes</th><th>Model Compound</th><th>mu23/RT (M^-1)</th><th>Error</th><th>Method</th><th>Author & Publication</th></tr>";
+     // output data of each row
+if ($result->num_rows > 0) {
+     while($row = $result->fetch_assoc()) {
+         echo "<tr><td>" . $row["Solutes"]. "</td><td>" . $row["Model_Compound"]. "</td><td>" . $row["mu23/RT (M-1)"]. "</td><td>" . $row["Error"]."</td><td>" . $row["Method"]."</td><td>" . $row["Author & Publication"]. "</td></tr>";
+     }
+}
+$conn->close();
+
+$conn1 = new mysqli($servername, $username, $password, $dbname);
+$result1 = $conn1->query("SELECT * FROM PEG WHERE Solutes='$solute' OR Model_Compound='$solute';");
+    
+if ($result1->num_rows > 0) {
+    while($row1 = $result1->fetch_assoc()) {
+         echo "<tr><td>" . $row1["Solutes"]. "</td><td>" . $row1["Model_Compound"]. "</td><td>" . $row1["mu23/RT (M-1)"]. "</td><td>" . $row1["Error"]."</td><td>" . $row1["Method"]."</td><td>" . $row1["Author & Publication"]. "</td></tr>";
+    }
+}
+$conn1->close();
+
+$conn2 = new mysqli($servername, $username, $password, $dbname);
+$result2 = $conn2->query("SELECT * FROM Urea WHERE Solutes='$solute' OR Model_Compound='$solute';");
+    
+if ($result2->num_rows > 0) {
+    while($row2 = $result2->fetch_assoc()) { 
+         echo "<tr><td>" . $row2["Solutes"]. "</td><td>" . $row2["Model_Compound"]. "</td><td>" . $row2["mu23/RT (M-1)"]. "</td><td>" . $row2["Error"]."</td><td>" . $row2["Method"]."</td><td>" . $row2["Author & Publication"]. "</td></tr>";
+    }
+}
+
+
+$conn2->close();
+?>
+</table>
+</body>
+</html>
+
