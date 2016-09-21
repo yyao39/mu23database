@@ -1,222 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Record Lab Online</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="./bootstrap.css">
-  <link rel="stylesheet" href = "./css/main.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Muli:300' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,100,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  
-</head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-<!--      <a class="navbar-brand" href="#myPage" style="font-family: 'Yesteryear', cursive; letter-spacing:0px;font-size:30px;">Interaction Library</a>
--->
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="#myPage">HOME</a></li>
-        <li><a href="#database">MU23</a></li>
-        <li><a href="#about">ALPHA</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        <!--<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>-->
-        <li><a href="loginregister/index.php">SIGN UP</a></li>
-        <!--<li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MY MuDB
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Log In</a></li>
-            <li><a href="#">Sign Up</a></li>
-            <li><a href="#">Membership</a></li> 
-          </ul>
-        </li> -->
-      </ul>
-    </div>
-  </div>
-</nav>
+<head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Record Lab Online</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Muli:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,100,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&subset=latin-ext" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a class="navbar-brand" href="#myPage" style="font-family: 'Yesteryear', cursive; letter-spacing:0px;font-size:30px;">Interaction Library</a>-->
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#myPage">HOME</a></li>
+                    <li><a href="#database" style="font-size:16px;">&mu;<sub>23</sub></a></li>
+                    <li><a href="#about">&alpha; VALUE</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="loginregister/index.php">SIGN UP</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="image/trans.gif" alt="" width="1200" height="700">
-        <div class="carousel-caption">
-        </div>      
-      </div>
-
-    </div>
-
-<div id="database" class="bg-1">
-  <div class="container">
-
-    <h3 class="text-center">SEARCH FOR Mu23 VALUES</h3>
-    <p class="text-center" style="padding-bottom:30px; text-decoration:none;">Bon Voyage!</p>
-    <div id="search">
-      <form method="get" target="_blank" action="result.php">
-       <input type="text" id="s" name="solute" placeholder="Please Enter the Compound Name" /><h3></h3>
-       <button type="submit" style = "border-radius:7px;" class="btn btn-block">SEARCH</button>
-    </form>
-    </div>
-    <h3></h3>
-  </div>
-</div>
-
-<div id="about" class="container text-center">
-
-    <h3 class="text-center">SEARCH FOR ALPHA VALUES</h3>
-    <p class="text-center" style="padding-bottom:30px; text-decoration:none;">Bon Voyage!</p>
-    <form action="action_page.php">
-      <select name="solute">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="fiat">Fiat</option>
-        <option value="audi">Audi</option>
-      </select>
-
-      <select name="cars">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="fiat">Fiat</option>
-        <option value="audi">Audi</option>
-      </select>
-
-      <br><br>
-      <input type="submit">
-    </form>
-</div>
-
-<!-- Container (The Band Section) 
-
-<div id="about" class="container text-center">
-  <h3>THE &mu;23 DATABASE</h3>
-  <p><em>should have come up with a cool subtitle!</em></p>
-  <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-  <br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p class="text-center"><strong>M. Thomas Record, Jr.</strong></p><br>
-      <a href="#demo" data-toggle="collapse">
-        <img src="https://biochem.wisc.edu/sites/default/files/labs/record/tom.jpg" class="img-rounded" alt="Random Name" width="140" height="190">
-      </a>
-      <div id="demo" style="margin-top:20px;margin-bottom:20px;" class="collapse">
-        <p>Principal Investigator</p>
-        <p>Boss of the lab</p>
-        <p>What else can I say lol</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <p class="text-center"><strong>Yao Yao</strong></p><br>
-      <a href="#demo2" data-toggle="collapse">
-        <img src="image/self.jpg" class="img-rounded" alt="Random Name" width="140" height="190">
-      </a>
-      <div id="demo2" style="margin-top:20px;margin-bottom:20px;" class="collapse">
-        <p>Developer</p>
-        <p>Loves coding</p>
-        <p>And other random things</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <p class="text-center"><strong>Sherry Lixue Cheng</strong></p><br>
-      <a href="#demo3" data-toggle="collapse">
-        <img src="image/sherry.jpg" class="img-rounded" alt="Random Name" width="140" height="190">
-      </a>
-      <div id="demo3" style="margin-top:20px;margin-bottom:20px;" class="collapse">
-        <p>Bass player</p>
-        <p>Loves math</p>
-        <p>Member since 2005</p>
-      </div>
-    </div>
-  </div>
-  <h3></h3>
-</div>
--->
-
-<!-- Container (Contact Section) -->
-<div id="contact" class="bg-1" style="padding-bottom:30px;margin-Bottom:-27px;">
-<div class="container">
-  <h3 class="text-center">CONTACT US</h3>
-  <p class="text-center"><em>For Science!</em></p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <p>Fan? Drop a note.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Madison, WI, USA</p>
-      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
-    </div>
-    <div class="col-md-8">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        <div class="item active">
+            <img src="image/trans.gif" alt="" width="1200" height="700">
+            <div class="carousel-caption">
+            </div>
         </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
-      <br>
-      <div class="row">
-        <div class="col-md-12 form-group">
-          <button class="btn btn-block pull-right" type="submit">Send</button>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
-</div>
-  <br>
-  
 
-<!-- Footer -->
-<footer class="text-center">
-  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
-   BACK
-  </a><br><br>
-</footer>
+    <div id="database" class="bg-1">
+        <div class="container">
+            <h3 class="text-center">SEARCH FOR &mu;<sub>23</sub> VALUES</h3>
+            <p class="text-center" style="padding-bottom:30px;">Bon Voyage!</p>
+            <p class="definition">Lorem ipsum dolor sit amet, id duo esse sale repudiandae, at vim liber legere explicari. Mel elit simul commodo ut, qui salutatus efficiantur voluptatibus ei. Vix viris graeci ne, nihil adolescens eu sit, eu quis possit minimum quo. Ius id
+                cetero repudiare definitiones. Omnes facilisi democritum no vix. Lorem ipsum dolor sit amet, id duo esse sale repudiandae, at vim liber legere explicari. Mel elit simul commodo ut, qui salutatus efficiantur voluptatibus ei. Vix viris graeci
+                ne, nihil adolescens eu sit, eu quis possit minimum quo. Ius id cetero repudiare definitiones.</p><br></br>
+            <div id="search">
+                <form method="get" target="_blank" action="result.php">
+                    <div class="col-md-8">
+                        <input type="text" id="s" name="solute" placeholder="Please Enter the Compound Name" />
+                        <h3></h3>
+                    </div>
+                    <div class="col-md-4">
+                        <button type="submit" style="border-radius:7px;" class="btn btn-block">SEARCH</button>
+                        <h3></h3>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
-<script>
-$(document).ready(function(){
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
-  
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    <div id="about" class="container">
+        <div class="container">
+            <h3 class="text-center">SEARCH FOR &alpha; VALUES</h3>
+            <p class="text-center" style="padding-bottom:30px;">Bon Voyage!</p>
+            <p class="definition">Lorem ipsum dolor sit amet, id duo esse sale repudiandae, at vim liber legere explicari. Mel elit simul commodo ut, qui salutatus efficiantur voluptatibus ei. Vix viris graeci ne, nihil adolescens eu sit, eu quis possit minimum quo. Ius id
+                cetero repudiare definitiones. Omnes facilisi democritum no vix. Lorem ipsum dolor sit amet, id duo esse sale repudiandae, at vim liber legere explicari. Mel elit simul commodo ut, qui salutatus efficiantur voluptatibus ei. Vix viris graeci
+                ne, nihil adolescens eu sit, eu quis possit minimum quo. Ius id cetero repudiare definitiones.</p><br></br>
+            <form action="action_page.php">
+                <div class="col-md-4">
+                    <select name="solute" class="form-control">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                    <br></br>
+                </div>
+                <div class="col-md-4">
+                    <select name="cars" class="form-control">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                    <br></br>
+                </div>
+            </form>
+            <div class="col-md-4">
+                <button type="submit" style="border-radius:7px;" class="btn btn-block">SEARCH</button>
+                <h3></h3>
+            </div>
+        </div>
+    </div>
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="bg-1" style="padding-bottom:30px;margin-Bottom:-27px;">
+        <div class="container">
+            <h3 class="text-center">CONTACT US</h3>
+            <p class="text-center"><em>For Science!</em></p>
+            <div class="row">
+                <div class="col-md-4">
+                    <p>Fan? Drop a note.</p>
+                    <p><span class="glyphicon glyphicon-map-marker"></span>Madison, WI, USA</p>
+                    <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+                    <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+                </div>
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                        </div>
+                    </div>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <button class="btn btn-block pull-right" style="border-radius:7px;" type="submit">SEND</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
 
-      // Prevent default anchor click behavior
-      event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+    <!-- Footer -->
+    <footer class="text-center">
+        <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">BACK</a><br><br>
+    </footer>
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-})
-</script>
+    <script>
+        $(document).ready(function() {
+            // Initialize Tooltip
+            $('[data-toggle="tooltip"]').tooltip();
 
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        })
+    </script>
 </body>
+
 </html>
+
+</script>
+</body>
+
+</html>
+
