@@ -110,9 +110,9 @@ if ($result->num_rows > 0) {
      echo "<table>
 	     <thead>
   	       <tr>
-    	         <th>Solutes</th>
+    	         <th>Solute</th>
     		 <th>Model Compound</th>
-    	 	 <th>mu23/RT (M^-1)</th>
+    	 	 <th>&mu;23/RT (M^-1)</th>
     		 <th>Error</th>
     	 	 <th>Method</th>
     		 <th>Author &amp; Publication</th>
@@ -145,9 +145,9 @@ if ($result1->num_rows > 0) {
     echo "<table>
              <thead>
                <tr>
-                 <th>Solutes</th>
+                 <th>Solute</th>
                  <th>Model Compound</th>
-                 <th>mu23/RT (M^-1)</th>
+                 <th>&mu;23/RT (M^-1)</th>
                  <th>Error</th>
                  <th>Method</th>
                  <th>Author &amp; Publication</th>
@@ -175,9 +175,9 @@ if ($result2->num_rows > 0) {
     echo "<table>
              <thead>
                <tr>
-                 <th>Solutes</th>
+                 <th>Solute</th>
                  <th>Model Compound</th>
-                 <th>mu23/RT (M^-1)</th>
+                 <th>&mu;23/RT (M^-1)</th>
                  <th>Error</th>
                  <th>Method</th>
                  <th>Author &amp; Publication</th>
