@@ -197,6 +197,37 @@ if ($result2->num_rows > 0) {
 }
 
 $conn2->close();
+
+// search another database
+$conn3 = new mysqli($servername, $username, $password, $dbname);
+$result3 = $conn3->query("SELECT * FROM `Glycine Betaine` WHERE Solutes='$solute' OR Model_Compound='$solute';");
+    
+if ($result3->num_rows > 0) {
+    echo "<table>
+             <thead>
+               <tr>
+                 <th>Solute</th>
+                 <th>Model Compound</th>
+                 <th>&mu;23/RT (M^-1)</th>
+                 <th>Error</th>
+                 <th>Method</th>
+                 <th>Author &amp; Publication</th>
+               </tr>
+             </thead>";
+    while($row3 = $result3->fetch_assoc()) {
+        echo "
+        <tr>
+          <td>" . $row3["Solutes"]. "</td>
+          <td>" . $row3["Model_Compound"]. "</td>
+          <td>" . $row3["mu23/RT (M-1)"]. "</td>
+          <td>" . $row3["Error"]."</td>
+          <td>" . $row3["Method"]."</td>
+          <td>" . $row3["Author_and_Publication"]. "</td>
+        </tr>";
+    }    
+}
+
+$conn3->close();
 ?>
 </table>
 </body>
