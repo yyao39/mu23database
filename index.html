@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Muli:300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,100,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&subset=latin-ext" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,100,600&subset=latin,latin-ext'
+        rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&subset=latin-ext"
+        rel="stylesheet">
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script type="text/x-mathjax-config">
@@ -59,17 +61,18 @@
         <div class="container">
             <h3 class="text-center">SEARCH FOR $\mu_{23}$ VALUES</h3>
             <p class="text-center" style="padding-bottom:20px;">Bon Voyage!</p>
-            <p class="definition">$\mu_{23}$ is the chemical
-potential derivative (the subscripts 1, 2, and 3 refer to water,
-biopolymer/model compound, and urea, respectively). The value of $\mu_{23}$ is a measure of the preferential
-interaction of a solute with a biopolymer or model compound,
-where a negative value indicates a favorable preferential
-interaction and a positive value indicates an unfavorable
-preferential interaction $\textit{relative to interactions with water}$.</p>
+            <p class="definition">$\mu_{23}$ is the chemical potential derivative (the subscripts 1, 2,
+                and 3 refer to water, biopolymer/model compound, and urea, respectively).
+                The value of $\mu_{23}$ is a measure of the preferential interaction
+                of a solute with a biopolymer or model compound, where a negative
+                value indicates a favorable preferential interaction and a positive
+                value indicates an unfavorable preferential interaction $\textit{relative
+                to interactions with water}$.</p>
             <div id="search">
                 <form method="get" target="_blank" action="result.php">
                     <div class="col-md-8">
-                        <input type="text" id="s" name="solute" placeholder="Please Enter the Compound Name" />
+                        <input type="text" id="s" name="solute" placeholder="Please Enter the Compound Name"
+                        />
                         <h3></h3>
                     </div>
                     <div class="col-md-4">
@@ -85,9 +88,9 @@ preferential interaction $\textit{relative to interactions with water}$.</p>
         <div class="container">
             <h3 class="text-center">SEARCH FOR $\alpha$ VALUES</h3>
             <p class="text-center" style="padding-bottom:20px;">Bon Voyage!</p>
-            <p class="definition">Values of $\mu_{23}/RT$ for protein model compounds were dissected in an ASA-based analysis.
-$$\frac{\mu_{23}}{RT} = \sum_{i} \alpha_i(ASA)_i$$</p>
-            <form method = "get" target = "_blank" action="result_alpha.php">
+            <p class="definition">Values of $\mu_{23}/RT$ for protein model compounds were dissected in
+                an ASA-based analysis. $$\frac{\mu_{23}}{RT} = \sum_{i} \alpha_i(ASA)_i$$</p>
+            <form method="get" target="_blank" action="result_alpha.php">
                 <div class="col-md-4">
                     <select name="solute" class="form-control">
                         <option value="volvo">Volvo</option>
@@ -122,20 +125,24 @@ $$\frac{\mu_{23}}{RT} = \sum_{i} \alpha_i(ASA)_i$$</p>
             <div class="row">
                 <div class="col-md-4">
                     <p>Fan? Drop a note.</p>
-                    <p><span class="glyphicon glyphicon-map-marker"></span>Madison, WI, USA</p>
+                    <p><span class="glyphicon glyphicon-map-marker"></span>Madison,
+                        WI, USA</p>
                     <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
                     <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
                 </div>
                 <div class="col-md-8">
                     <div class="row">
                         <div class="col-sm-6 form-group">
-                            <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text"
+                                required>
                         </div>
                         <div class="col-sm-6 form-group">
-                            <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                            <input class="form-control" id="email" name="email" placeholder="Email" type="email"
+                                required>
                         </div>
                     </div>
-                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment"
+                        rows="5"></textarea>
                     <br>
                     <div class="row">
                         <div class="col-md-12 form-group">
@@ -160,28 +167,29 @@ $$\frac{\mu_{23}}{RT} = \sum_{i} \alpha_i(ASA)_i$$</p>
             $('[data-toggle="tooltip"]').tooltip();
 
             // Add smooth scrolling to all links in navbar + footer link
-            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+            $(".navbar a, footer a[href='#myPage']").on('click',
+                function(event) {
 
-                // Make sure this.hash has a value before overriding default behavior
-                if (this.hash !== "") {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
 
-                    // Prevent default anchor click behavior
-                    event.preventDefault();
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
 
-                    // Store hash
-                    var hash = this.hash;
+                        // Store hash
+                        var hash = this.hash;
 
-                    // Using jQuery's animate() method to add smooth page scroll
-                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 900, function() {
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function() {
 
-                        // Add hash (#) to URL when done scrolling (default click behavior)
-                        window.location.hash = hash;
-                    });
-                } // End if
-            });
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
         })
     </script>
 </body>
@@ -192,4 +200,3 @@ $$\frac{\mu_{23}}{RT} = \sum_{i} \alpha_i(ASA)_i$$</p>
 </body>
 
 </html>
-
