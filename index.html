@@ -59,27 +59,28 @@
 
     <div id="database" class="bg-1">
         <div class="container">
-            <h3 class="text-center">SEARCH FOR $\mu_{23}$ VALUES</h3>
-            <p class="text-center" style="padding-bottom:20px;">Bon Voyage!</p>
-            <p class="definition">$\mu_{23}$ is the chemical potential derivative (the subscripts 1, 2,
-                and 3 refer to water, biopolymer/model compound, and urea, respectively).
-                The value of $\mu_{23}$ is a measure of the preferential interaction
-                of a solute with a biopolymer or model compound, where a negative
-                value indicates a favorable preferential interaction and a positive
-                value indicates an unfavorable preferential interaction $\textit{relative
-                to interactions with water}$.</p>
-            <div id="search">
-                <form method="get" target="_blank" action="result.php">
-                    <div class="col-md-8">
-                        <input type="text" id="s" name="solute" placeholder="Please Enter the Compound Name"
-                        />
-                        <h3></h3>
-                    </div>
-                    <div class="col-md-4">
-                        <button type="submit" style="border-radius:7px;" class="btn btn-block">SEARCH</button>
-                        <h3></h3>
-                    </div>
-                </form>
+            <div class="container">
+                <h3 class="text-center">SEARCH FOR $\mu_{23}$ VALUES</h3>
+                <p class="definition">$\mu_{23}$ is the chemical potential derivative (the subscripts 1,
+                    2, and 3 refer to water, biopolymer/model compound, and urea,
+                    respectively). The value of $\mu_{23}$ is a measure of the preferential
+                    interaction of a solute with a biopolymer or model compound,
+                    where a negative value indicates a favorable preferential interaction
+                    and a positive value indicates an unfavorable preferential interaction
+                    $\textit{relative to interactions with water}$.</p>
+                <div id="search">
+                    <form method="get" target="_blank" action="result.php">
+                        <div class="col-md-8">
+                            <input type="text" id="s" name="solute" placeholder="Please Enter the Compound Name"
+                            />
+                            <h3></h3>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="submit" style="border-radius:7px;" class="btn btn-block">SEARCH</button>
+                            <h3></h3>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -87,7 +88,6 @@
     <div id="about" class="container">
         <div class="container">
             <h3 class="text-center">SEARCH FOR $\alpha$ VALUES</h3>
-            <p class="text-center" style="padding-bottom:20px;">Bon Voyage!</p>
             <p class="definition">Values of $\mu_{23}/RT$ for protein model compounds were dissected in
                 an ASA-based analysis. $$\frac{\mu_{23}}{RT} = \sum_{i} \alpha_i(ASA)_i$$</p>
             <form method="get" target="_blank" action="result_alpha.php">
