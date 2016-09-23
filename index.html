@@ -62,12 +62,17 @@
             <div class="container">
                 <h3 class="text-center">SEARCH FOR $\mu_{23}$ VALUES</h3>
                 <p class="definition">$\mu_{23}$ is the chemical potential derivative (the subscripts 1,
-                    2, and 3 refer to water, biopolymer/model compound, and urea,
+                    2, and 3 refer to water, biopolymer/model compound, and solute,
                     respectively). The value of $\mu_{23}$ is a measure of the preferential
                     interaction of a solute with a biopolymer or model compound,
                     where a negative value indicates a favorable preferential interaction
                     and a positive value indicates an unfavorable preferential interaction
-                    $\textit{relative to interactions with water}$.</p>
+                    $\textit{relative to interactions with water}$.<sup>1</sup>
+                </p>
+                <p class="definition definition-star">(1) Guinn, Emily J., et al. "Quantifying functional
+                    group interactions that determine urea effects on nucleic acid helix formation."
+                    $\textit{Journal of the American Chemical Society}$ 135.15 (2013): 5828-5838.
+                </p>
                 <div id="search">
                     <form method="get" target="_blank" action="result.php">
                         <div class="col-md-8">
@@ -88,24 +93,38 @@
     <div id="about" class="container">
         <div class="container">
             <h3 class="text-center">SEARCH FOR $\alpha$ VALUES</h3>
-            <p class="definition">Values of $\mu_{23}/RT$ for protein model compounds were dissected in
-                an ASA-based analysis. $$\frac{\mu_{23}}{RT} = \sum_{i} \alpha_i(ASA)_i$$</p>
+            <p class="definition">Values of $\mu_{23}$ for protein model compounds were dissected in
+                an ASA-based analysis to determine interactions of solute with individual biopolymer-related
+                functional groups (ASA stands for accessible surface area).<sup>1</sup>
+                $$\mu_{23} = \sum_{i} \alpha_i(ASA)_i$$
+            </p>
+            <p class="definition definition-star">(1) Guinn, Emily J., et al. "Quantifying functional
+                group interactions that determine urea effects on nucleic acid helix formation."
+                $\textit{Journal of the American Chemical Society}$ 135.15 (2013): 5828-5838.
+            </p>
             <form method="get" target="_blank" action="result_alpha.php">
                 <div class="col-md-4">
                     <select name="solute" class="form-control">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="fiat">Fiat</option>
-                        <option value="audi">Audi</option>
+                        <option value="volvo">Glycine Betaine</option>
+                        <option value="saab">PEG</option>
+                        <option value="fiat">Proline</option>
+                        <option value="audi">Urea</option>
                     </select>
                     <br></br>
                 </div>
                 <div class="col-md-4">
                     <select name="functional_group" class="form-control">
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="fiat">Fiat</option>
-                        <option value="audi">Audi</option>
+                        <option value="volvo">nucleic acid aromatic ring (C,N)</option>
+                        <option value="saab">nucleic acid ring methyl</option>
+                        <option value="fiat">nucleic acid carbonyl O</option>
+                        <option value="audi">nucleic acid amino N</option>
+                        <option value="volvo">nucleic acid phosphate O</option>
+                        <option value="saab">nucleic acid sugar</option>
+                        <option value="fiat">protein aromatic C</option>
+                        <option value="audi">protein aliphatic C</option>
+                        <option value="saab">protein amide O</option>
+                        <option value="fiat">protein amide N</option>
+                        <option value="audi">protein carboxylate O</option>
                     </select>
                     <br></br>
                 </div>

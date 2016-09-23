@@ -160,6 +160,10 @@
       padding-bottom: 20px;
   }
 
+  .definition-star {
+      font-size: 12px;
+  }
+
   .dropdown-menu li a {
       color: #000 !important;
   }
