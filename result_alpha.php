@@ -1,5 +1,8 @@
 <html>
 <head>
+<script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
 
 <style>
 table {
@@ -147,7 +150,7 @@ if ($result1->num_rows > 0) {
                <tr>
                  <th>Solute</th>
                  <th>Functional Group</th>
-                 <th>&alpha; Value</th>
+                 <th>&alpha; Value * 10<sup>4</sup> (m<sup>-1</sup> A<sup>2</sup>)</th>
                  <th>Error</th>
                  <th>Method</th>
                  <th>Author &amp; Publication</th>
